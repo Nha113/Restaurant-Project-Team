@@ -1,0 +1,670 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	background:
+		url('https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_1280.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/*----------------------------- --------------------menu list---------------------------- */
+.menu-bar {
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	background-color: rgb(235, 117, 137);
+	padding: 15px;
+	border-bottom: 3px solid rgb(221, 90, 194);
+}
+
+.dropdown button {
+	display: none;
+}
+
+.menu-bar a:hover {
+	background: red;
+	padding: 16px;
+}
+
+.menu-bar a {
+	color: white;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*---------------------------------------------Hearder--------------------------- ----------------------*/
+.head {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100vh;
+	padding: 10px;
+}
+
+.header {
+	width: 80%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.header h1 {
+	font-family: cursive;
+	color: white;
+}
+
+.header .text-content {
+	color: white;
+	width: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.header a {
+	width: 15%;
+	padding: 10px;
+	background: blue;
+	color: white;
+	outline: none;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+/*--------------------------------------- Home page Popular -----------------------------------------*/
+.home-page {
+	background-color: rgb(227, 151, 164);
+}
+
+.Popular {
+	padding: 10px;
+	width: 90%;
+	margin: auto;
+}
+
+.Popular h1 {
+	text-align: center;
+	font-weight: lighter;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 48px;
+	margin-top: 80px;
+}
+
+.Popular span {
+	color: rgb(255, 0, 85);
+	margin-left: 10px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Popular h3 {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	font-size: 28px;
+	margin-left: 20px;
+}
+
+/*----------------------------------breakfast & lanch & dinner & drink------------------------------------ */
+.Breakfast, .lanch, .dinner, .drink {
+	display: flex;
+	justify-content: space-between;
+}
+
+.img1, .img2, .img3, .img4 {
+	padding: 10px;
+	width: 23%;
+}
+
+.img1 h2, .img2 h2, .img3 h2, .img4 h2 {
+	font-weight: lighter;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.img1 p, .img2 p, .img3 p, .img4 p {
+	font-weight: lighter;
+	color: rgb(255, 0, 85);
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.img1 img, .img2 img, .img3 img, .img4 img {
+	width: 100%;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
+	cursor: pointer;
+}
+
+/*---------------------------------------------- Popular Desert------------------------------------ */
+/* Container & Heading */
+.popular-desserts {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto 80px auto;
+}
+
+.popular-desserts h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+.popular-desserts h1 span {
+	color: #f45ca0; /* Accent color matching theme */
+	padding-left: 10px;
+}
+
+/* Desert Cards Grid */
+.desert {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+/* Individual Dessert Card */
+.desert .card {
+	display: flex;
+	align-items: center;
+	width: calc(25% - 15px); /* Perfectly aligns 4 columns with gap */
+	background-color: #ffffff;
+	border: 1px solid rgb(208, 132, 132);
+	border-radius: 10px;
+	padding: 20px 15px;
+	box-sizing: border-box;
+	transition: background-color 0.3s ease, transform 0.3s ease, box-shadow
+		0.3s ease;
+}
+
+.desert .card:hover {
+	background-color: #fcf8f8;
+	cursor: pointer;
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(208, 132, 132, 0.2);
+}
+
+/* Dessert Image */
+.desert .card img {
+	width: 35%;
+	max-width: 70px;
+	height: auto;
+	object-fit: contain;
+}
+
+/* Dessert Text (Title & Price) */
+.desert .text {
+	margin-left: 15px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.desert .text p {
+	margin: 0 0 5px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.desert .text span {
+	font-size: 16px;
+	color: #f45ca0;
+	font-weight: bold;
+}
+
+/* Hover Grow Utility (if hover.css is not imported) */
+.hvr-grow {
+	transition: transform 0.3s ease;
+}
+
+.card:hover .hvr-grow {
+	transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media ( max-width : 1024px) {
+	.desert .card {
+		width: calc(50% - 10px); /* 2 columns on tablet */
+	}
+}
+
+@media ( max-width : 576px) {
+	.desert .card {
+		width: 100%; /* 1 column on mobile */
+	}
+	.popular-desserts h1 {
+		font-size: 36px;
+	}
+}
+
+/*------------------Photo Gallery-------------------- */
+.Gallery-page {
+	background: linear-gradient(to top right, rgba(247, 85, 27, 0.9),
+		rgba(243, 129, 218, 0.9), rgb(245, 68, 98));
+	padding: 10px;
+}
+
+.Gallery {
+	width: 90%;
+	margin: auto;
+}
+
+.Gallery h1 {
+	font-size: 60px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	font-weight: lighter;
+}
+
+.Gallery span {
+	color: whitesmoke;
+	margin-left: 10px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.gallery-image {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.gallery-image .pic {
+	width: 23%;
+	margin-bottom: 30px;
+}
+
+.pic img {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.pic img:hover {
+	cursor: pointer;
+}
+
+/*-------------------------------------------- About Us Restaurant------------------------------------------------ */
+.btn-about {
+	padding: 20px;
+	background-color: rgb(227, 151, 164);
+}
+
+.about {
+	width: 90%;
+	margin: auto;
+}
+
+.about h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	text-align: center;
+	font-weight: lighter;
+}
+
+.about span {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	text-align: center;
+	font-weight: lighter;
+	margin-left: 10px;
+	color: rgb(255, 0, 85);
+}
+
+.about h2 {
+	font-weight: lighter;
+	font-size: 48px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	;
+}
+
+.btn-box span {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 30px;
+	color: black;
+	margin-left: 1px;
+}
+
+.btn-box .box {
+	width: 22%;
+	border: 1px solid rgb(253, 103, 103);
+	padding: 10px;
+	margin-bottom: 30px;
+	line-height: 1.9;
+}
+
+.box:hover {
+	cursor: pointer;
+	background-color: rgb(233, 23, 86);
+}
+
+/*------------------------------------------------------- About Chef------------------------------------------------- */
+/* Container Layout */
+.btn-chef {
+	background: linear-gradient(to top, #f45ca0, rgb(218, 108, 218),
+		rgb(241, 99, 106));
+	padding: 60px 0;
+}
+
+.chef {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.chef h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 15px;
+}
+
+.chef h1 span {
+	padding: 0 10px;
+	color: whitesmoke;
+}
+
+.chef p {
+	width: 65%;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 1.6;
+}
+
+/* Chef Cards Grid */
+.btn-chefbox {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.btn-chefbox .chefbox {
+	width: calc(25% - 15px);
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s
+		ease;
+	border: 1px solid transparent;
+}
+
+/* Image Uniformity */
+.chefbox img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	display: block;
+}
+
+/* Hover Effect */
+.chefbox:hover {
+	cursor: pointer;
+	transform: translateY(-8px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-color: rgb(244, 199, 103);
+}
+
+/* Chef Info Section */
+.chef-pn {
+	padding: 20px 15px;
+	text-align: center;
+}
+
+.chef-pn h2 {
+	color: white;
+	font-weight: lighter;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+
+.chef-pn span {
+	color: #f0f0f0;
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: 'Times New Roman', Times, serif;
+	display: block;
+	margin-bottom: 15px;
+}
+
+/* Social Media Icons */
+.chef-pn .icon {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.chef-pn .icon a {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.chef-pn .icon a:hover {
+	color: rgb(244, 199, 103);
+	transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media ( max-width : 992px) {
+	.btn-chefbox .chefbox {
+		width: calc(50% - 10px);
+	}
+	.chef p {
+		width: 85%;
+	}
+}
+
+@media ( max-width : 576px) {
+	.btn-chefbox .chefbox {
+		width: 100%;
+	}
+	.chef p {
+		width: 100%;
+	}
+	.chef h1 {
+		font-size: 36px;
+	}
+}
+
+/* <!---------------------------- Contact page---------------------------------> */
+
+/*-----------------------------Footer-------------------------*/
+.footer {
+	background: #2e2727;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+/* ----------------------------------Responsive Page------------------------------------- */
+
+/* ================= TABLET ================= */
+@media ( max-width : 1007px) {
+	.menu-bar {
+		padding: 12px;
+	}
+	.menu-bar a {
+		font-size: 14px;
+	}
+	.header {
+		width: 90%;
+	}
+	.header .text-content {
+		width: 80%;
+	}
+	.header a {
+		width: 25%;
+	}
+	.Breakfast, .lanch, .dinner, .drink {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.img1, .img2, .img3, .img4 {
+		width: 47%;
+		box-sizing: border-box;
+	}
+	.box1, .box2, .box3, .box4 {
+		width: 40%;
+		margin-bottom: 15px;
+	}
+	.gallery-image .pic {
+		width: 48%;
+	}
+	.btn-box .box {
+		width: 47%;
+	}
+	.btn-chefbox .chefbox {
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	.location, .form-contact {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	iframe {
+		height: 350px;
+	}
+}
+
+/* ================= MOBILE ================= */
+@media ( max-width : 640px) {
+	.menu-bar {
+		padding: 10px;
+	}
+	.menu-bar a {
+		display: none;
+	}
+	.dropdown button {
+		display: block;
+	}
+	.dropdown button:hover {
+		cursor: pointer;
+	}
+	.dropdown .dropbtn {
+		font-size: 24px;
+		border: none;
+		outline: none;
+		color: white;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: black;
+		width: 100%;
+		z-index: 99;
+		margin-top: -40px;
+		margin-left: -10px;
+	}
+	.dropdown-content a {
+		float: none;
+		color: white;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		font-size: 14px;
+	}
+	.dropdown-content a:hover {
+		background-color: red;
+	}
+	.dropdown:focus-within .dropdown-content {
+		display: block;
+	}
+	.head {
+		height: auto;
+		padding: 50px 10px;
+	}
+	.header {
+		width: 95%;
+		margin-top: 20px;
+	}
+	.header h1 {
+		font-size: 28px;
+		text-align: center;
+	}
+	.header .text-content {
+		width: 100%;
+		font-size: 14px;
+	}
+	.header a {
+		width: 60%;
+	}
+	.Popular h1, .Gallery h1, .about h1, .chef h1, .btn-contact h1 {
+		font-size: 36px;
+	}
+	.Popular h3, .about h2 {
+		font-size: 24px;
+	}
+	.Breakfast, .lanch, .dinner, .drink {
+		flex-direction: column;
+	}
+	.img1, .img2, .img3, .img4 {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.desert {
+		flex-direction: column;
+	}
+	.box1, .box2, .box3, .box4 {
+		width: 100%;
+		box-sizing: border-box;
+		margin-bottom: 15px;
+	}
+	.gallery-image .pic {
+		width: 100%;
+	}
+	.btn-box .box {
+		width: 100%;
+	}
+	.btn-chefbox .chefbox {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.chef p {
+		width: 90%;
+	}
+	.location, .form-contact {
+		width: 100%;
+	}
+	iframe {
+		height: 300px;
+	}
+	input[type="text"], input[type="Email"], textarea {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	input[type="submit"], input[type="reset"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.footer {
+		font-size: 14px;
+	}
+}
