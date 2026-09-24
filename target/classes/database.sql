@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS littlestardb
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE littlestardb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password_hash VARCHAR(500) NOT NULL,
+    password_salt VARCHAR(200) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
