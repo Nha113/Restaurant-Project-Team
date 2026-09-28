@@ -150,8 +150,7 @@ body {
 				<div class="flex flex-wrap gap-4 pt-2">
 					<a href="#menu"
 						class="bg-white text-amber-600 font-bold px-7 py-3.5 rounded-xl shadow-lg hover:bg-amber-50 transition transform hover:-translate-y-0.5">
-						View Menu </a>
-						 <a href="#Popular"
+						View Menu </a> <a href="#Popular"
 						class="bg-amber-700/40 hover:bg-amber-700/60 text-white font-medium px-7 py-3.5 rounded-xl border border-white/20 transition">
 						Order Now </a>
 				</div>
@@ -1384,6 +1383,209 @@ body {
 
 		</div>
 	</section>
+
+	<!-------------------------------------------Contact Us------------------------------------------->
+	<section id="contact" class="py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<!-- Section Header -->
+			<div class="text-center mb-12">
+				<span
+					class="text-amber-600 font-semibold text-sm tracking-wide uppercase">Get
+					In Touch</span>
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-1">Contact
+					Us</h2>
+				<p class="text-gray-500 text-sm mt-2 max-w-xl mx-auto">Have any
+					questions or want to make a reservation? Feel free to reach out to
+					us anytime.</p>
+			</div>
+
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+				<!-- Contact Info Cards -->
+				<div class="space-y-6">
+					<!-- Location -->
+					<div
+						class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+						<div
+							class="w-12 h-12 rounded-xl bg-pink-100 text-[#eb7589] flex items-center justify-center shrink-0 text-xl font-bold">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div>
+							<h3 class="text-base font-bold text-gray-900">Our Location</h3>
+							<p class="text-gray-500 text-xs sm:text-sm mt-1">St. 271,
+								Sangkat Tuek Thla, Khan Sen Sok, Phnom Penh</p>
+						</div>
+					</div>
+
+					<!-- Phone -->
+					<div
+						class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+						<div
+							class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 text-xl font-bold">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div>
+							<h3 class="text-base font-bold text-gray-900">Phone Number</h3>
+							<p class="text-gray-500 text-xs sm:text-sm mt-1">+855 12 345
+								678 / +855 98 765 432</p>
+						</div>
+					</div>
+
+					<!-- Email -->
+					<div
+						class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+						<div
+							class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 text-xl font-bold">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div>
+							<h3 class="text-base font-bold text-gray-900">Email Address</h3>
+							<p class="text-gray-500 text-xs sm:text-sm mt-1">support@littlestarrestaurant.com</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Contact Form -->
+				<div
+					class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+					<form action="#" method="POST" class="space-y-4">
+						<div>
+							<label class="block text-xs font-bold text-gray-700 mb-1">Your
+								Name</label> <input type="text" placeholder="Enter your name"
+								class="w-full px-4 py-3 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-[#eb7589] transition">
+						</div>
+						<div>
+							<label class="block text-xs font-bold text-gray-700 mb-1">Your
+								Email</label> <input type="email" placeholder="Enter your email"
+								class="w-full px-4 py-3 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-[#eb7589] transition">
+						</div>
+						<div>
+							<label class="block text-xs font-bold text-gray-700 mb-1">Your
+								Message</label>
+							<textarea rows="4" placeholder="Write your message here..."
+								class="w-full px-4 py-3 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-[#eb7589] transition resize-none"></textarea>
+						</div>
+						<button type="submit"
+							class="w-full bg-[#eb7589] hover:bg-[#d66377] text-white font-bold py-3.5 rounded-xl transition shadow-md active:scale-95 text-sm">
+							Send Message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-------------------------------------------Customer Testimonials------------------------------------------->
+	<section class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<!-- Section Header -->
+			<div class="text-center mb-16">
+				<span
+					class="text-amber-600 font-semibold text-sm tracking-wide uppercase">Happy
+					Customers</span>
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-1">What
+					Our Customers Say</h2>
+				<p class="text-gray-500 text-sm mt-2 max-w-xl mx-auto">Read
+					authentic reviews from our lovely customers who enjoyed our food
+					and service.</p>
+			</div>
+
+			<!-- Testimonials Grid -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Review 1 -->
+				<div
+					class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col justify-between hover:shadow-md transition">
+					<div
+						class="absolute -top-4 right-8 bg-[#eb7589] text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+						<i class="fas fa-quote-right"></i>
+					</div>
+					<div>
+						<!-- Star Rating -->
+						<div class="flex text-amber-400 text-xs space-x-1 mb-4">
+							<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star"></i>
+						</div>
+						<p class="text-gray-600 text-sm italic leading-relaxed mb-6">
+							"The Spicy Chicken Sandwich is out of this world! Crispy, fresh,
+							and the delivery was amazingly fast. Highly recommended!"</p>
+					</div>
+					<div
+						class="flex items-center gap-3 pt-4 border-t border-gray-200/60">
+						<img
+							src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+							alt="Customer" class="w-10 h-10 rounded-full object-cover">
+						<div>
+							<h4 class="text-sm font-bold text-gray-900">Srey Nich</h4>
+							<p class="text-[11px] text-gray-400">Regular Customer</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Review 2 -->
+				<div
+					class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col justify-between hover:shadow-md transition">
+					<div
+						class="absolute -top-4 right-8 bg-[#eb7589] text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+						<i class="fas fa-quote-right"></i>
+					</div>
+					<div>
+						<!-- Star Rating -->
+						<div class="flex text-amber-400 text-xs space-x-1 mb-4">
+							<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star"></i>
+						</div>
+						<p class="text-gray-600 text-sm italic leading-relaxed mb-6">
+							"Great ambiance and very professional service. The Fresh Mango
+							Lassi and Pasta Dish are my absolute favorites here!"</p>
+					</div>
+					<div
+						class="flex items-center gap-3 pt-4 border-t border-gray-200/60">
+						<img
+							src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+							alt="Customer" class="w-10 h-10 rounded-full object-cover">
+						<div>
+							<h4 class="text-sm font-bold text-gray-900">La Dinel</h4>
+							<p class="text-[11px] text-gray-400">Food Blogger</p>
+						</div>
+					</div>
+				</div>
+				<!-- Review 3 -->
+				<div
+					class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col justify-between hover:shadow-md transition">
+					<div
+						class="absolute -top-4 right-8 bg-[#eb7589] text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+						<i class="fas fa-quote-right"></i>
+					</div>
+					<div>
+						<!-- Star Rating -->
+						<div class="flex text-amber-400 text-xs space-x-1 mb-4">
+							<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+								class="fas fa-star-half-alt"></i>
+						</div>
+						<p class="text-gray-600 text-sm italic leading-relaxed mb-6">
+							"Cleanliness, delicious food, and friendly staff. Ordering
+							through the website is so easy and convenient. Love it!"</p>
+					</div>
+					<div
+						class="flex items-center gap-3 pt-4 border-t border-gray-200/60">
+						<img
+							src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+							alt="Customer" class="w-10 h-10 rounded-full object-cover">
+						<div>
+							<h4 class="text-sm font-bold text-gray-900">Monika</h4>
+							<p class="text-[11px] text-gray-400">Local Guide</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
 
 	<!-- Floating Cart Button -->
 	<button type="button" onclick="openCartModal()"
