@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restaurant</title>
@@ -1427,6 +1429,107 @@ body {
 	</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------Footer------------------------------------------->
+
+
+
+ <footer
+  class="bg-gray-900 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+  <div
+   class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+   <!-- Brand Info -->
+   <div class="space-y-4 md:col-span-1">
+    <span class="text-2xl font-extrabold text-white tracking-wide">
+     LittleStar <span class="text-[#eb7589]">Restaurant</span>
+    </span>
+    <p class="text-gray-400 text-xs leading-relaxed">Delicious taste
+     and fast service. We provide high-quality food prepared with care
+     by professional chefs.</p>
+    <div class="flex space-x-3 pt-2">
+     <a href="#"
+      class="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#eb7589] flex items-center justify-center text-gray-300 hover:text-white transition"><i
+      class="fab fa-facebook-f text-xs"></i></a> <a href="#"
+      class="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#eb7589] flex items-center justify-center text-gray-300 hover:text-white transition"><i
+      class="fab fa-instagram text-xs"></i></a> <a href="#"
+      class="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#eb7589] flex items-center justify-center text-gray-300 hover:text-white transition"><i
+      class="fab fa-telegram-plane text-xs"></i></a> <a href="#"
+      class="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#eb7589] flex items-center justify-center text-gray-300 hover:text-white transition"><i
+      class="fab fa-tiktok text-xs"></i></a>
+    </div>
+   </div>
+
+   <!-- Quick Links -->
+   <div>
+    <h4
+     class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-4">Quick
+     Links</h4>
+    <ul class="space-y-2.5 text-xs">
+     <li><a href="#start"
+      class="text-gray-400 hover:text-white transition">Home</a></li>
+     <li><a href="#menu"
+      class="text-gray-400 hover:text-white transition">Trending
+       Menu</a></li>
+     <li><a href="#gallery"
+      class="text-gray-400 hover:text-white transition">Photo
+       Gallery</a></li>
+     <li><a href="#contact"
+      class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+    </ul>
+   </div>
+
+   <!-- Opening Hours -->
+   <div>
+    <h4
+     class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-4">Opening
+     Hours</h4>
+    <ul class="space-y-2 text-xs text-gray-400">
+     <li class="flex justify-between"><span>Monday - Friday:</span>
+      <span class="text-white">8:00 AM - 10:00 PM</span></li>
+     <li class="flex justify-between"><span>Saturday:</span> <span
+      class="text-white">9:00 AM - 11:00 PM</span></li>
+     <li class="flex justify-between"><span>Sunday:</span> <span
+      class="text-white">9:00 AM - 11:00 PM</span></li>
+    </ul>
+   </div>
+
+   <!-- Newsletter -->
+   <div>
+    <h4
+     class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-4">Newsletter</h4>
+    <p class="text-gray-400 text-xs mb-3">Subscribe to get special
+     offers and updates.</p>
+    <form class="space-y-2">
+     <input type="email" placeholder="Enter your email"
+      class="w-full px-3 py-2.5 text-xs rounded-xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-[#eb7589]">
+     <button type="submit"
+      class="w-full bg-[#eb7589] hover:bg-[#d66377] text-white font-bold py-2.5 rounded-xl text-xs transition">Subscribe</button>
+    </form>
+   </div>
+  </div>
+
+  <!-- Copyright -->
+  <div
+   class="max-w-6xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
+   <p>&copy; 2026 LittleStar Restaurant. All rights reserved.</p>
+   <div class="flex space-x-4 mt-3 sm:mt-0">
+    <a href="#" class="hover:text-gray-400 transition">Privacy
+     Policy</a> <a href="#" class="hover:text-gray-400 transition">Terms
+     of Service</a>
+   </div>
+  </div>
+ </footer>
 
 
 
