@@ -1,1 +1,14 @@
-ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
+CREATE DATABASE IF NOT EXISTS littlestar_db
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE littlestar_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password_hash VARCHAR(500) NOT NULL,
+    password_salt VARCHAR(200) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
