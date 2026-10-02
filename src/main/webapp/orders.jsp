@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LittleStar - Order Management</title>
+    <title>LittleStar - Admin Order Management</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -15,11 +15,11 @@
     <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
         <!-- Header Section -->
         <div class="flex justify-between items-center mb-6">
-            <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+            <div><h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
                 <i class="fas fa-receipt text-pink-500"></i> Customer Orders
-            </h1>
+            </h1><a href="<%=request.getContextPath()%>/admin/dashboard" class="text-sm text-pink-600">← Dashboard</a></div>
             <span class="text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full font-semibold">
-                Total Orders: ${not empty orders ? orders.size() : 0}
+                Total Orders: ${not empty orderList ? orderList.size() : 0}
             </span>
         </div>
 
@@ -40,8 +40,8 @@
                 </thead>
                 <tbody class="divide-y divide-gray-100 text-sm">
                     <c:choose>
-                        <c:when test="${not empty orders}">
-                            <c:forEach var="order" items="${orders}">
+                        <c:when test="${not empty orderList}">
+                            <c:forEach var="order" items="${orderList}">
                                 <tr class="hover:bg-gray-50/80 transition">
                                     <td class="p-3.5 font-bold text-gray-900">#${order.id}</td>
                                     <td class="p-3.5 font-medium text-gray-800">${order.customer_name}</td>
@@ -118,7 +118,7 @@
             params.append('action', 'delete');
             params.append('id', orderId);
 
-            fetch('${pageContext.request.contextPath}/orders', {
+            fetch('<%=request.getContextPath()%>/orders', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: params.toString()
@@ -127,33 +127,10 @@
                 if (res.ok) {
                     window.location.reload();
                 } else {
-                    res.text().then(err => alert('Failed to delete order: ' + err));
+                    alert('Failed to delete order');
                 }
             })
-            .catch(err => alert('Error connecting to server: ' + err));
-        }
-    }
-
-    function updateStatus(orderId, status) {
-        if (confirm('Are you sure you want to change order #' + orderId + ' status to ' + status + '?')) {
-            const params = new URLSearchParams();
-            params.append('action', 'update');
-            params.append('id', orderId);
-            params.append('status', status);
-
-            fetch('${pageContext.request.contextPath}/orders', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: params.toString()
-            })
-            .then(res => {
-                if (res.ok) {
-                    window.location.reload();
-                } else {
-                    res.text().then(err => alert('Failed to update order status: ' + err));
-                }
-            })
-            .catch(err => alert('Error connecting to server: ' + err));
+            .catch(() => alert('Error connecting to server'));
         }
     }
     </script>
