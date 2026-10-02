@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restaurant</title>
@@ -81,7 +79,7 @@ body {
 								<p id="dropdownUserEmail"
 									class="text-[11px] text-gray-500 truncate">jane.doe@example.com</p>
 							</div>
-							<a href="${pageContext.request.contextPath}/orders"
+							<a href="${pageContext.request.contextPath}/user/dashboard"
 								class="flex items-center gap-2.5 px-4 py-2 text-xs hover:bg-pink-50 hover:text-pink-600 transition">
 								<i class="fas fa-receipt w-4 text-gray-400"></i> My Orders
 							</a> <a href="#profile" onclick="toggleUserDropdown()"
@@ -152,7 +150,7 @@ body {
 				<div class="flex flex-wrap gap-4 pt-2">
 					<a href="#menu"
 						class="bg-white text-amber-600 font-bold px-7 py-3.5 rounded-xl shadow-lg hover:bg-amber-50 transition transform hover:-translate-y-0.5">
-						View Menu </a> <a href="#Popular"
+						View Menu </a> <a href="#order-section"
 						class="bg-amber-700/40 hover:bg-amber-700/60 text-white font-medium px-7 py-3.5 rounded-xl border border-white/20 transition">
 						Order Now </a>
 				</div>
@@ -1428,6 +1426,14 @@ body {
 	</div>
 
 
+
+
+
+
+
+
+
+
 	<!-------------------------------------------Contact Us------------------------------------------->
 	<section id="contact" class="py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
 		<div class="max-w-6xl mx-auto">
@@ -1516,6 +1522,15 @@ body {
 			</div>
 		</div>
 	</section>
+
+
+
+
+
+
+
+
+
 	<!-------------------------------------------Customer Testimonials------------------------------------------->
 	<section class="py-20 bg-white px-4 sm:px-6 lg:px-8">
 		<div class="max-w-6xl mx-auto">
@@ -1592,6 +1607,7 @@ body {
 						</div>
 					</div>
 				</div>
+
 				<!-- Review 3 -->
 				<div
 					class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col justify-between hover:shadow-md transition">
@@ -1630,10 +1646,8 @@ body {
 
 
 
+
 	<!-------------------------------------------Footer------------------------------------------->
-
-
-
 	<footer
 		class="bg-gray-900 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
 		<div
@@ -1675,6 +1689,8 @@ body {
 							Gallery</a></li>
 					<li><a href="#contact"
 						class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+					
+
 				</ul>
 			</div>
 
@@ -1719,6 +1735,10 @@ body {
 			</div>
 		</div>
 	</footer>
+
+
+
+
 
 
 
@@ -2456,6 +2476,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .forEach(function(key) { url.searchParams.delete(key); });
     window.history.replaceState({}, document.title, url.pathname + url.search + url.hash);
 });
+
+
+
+//Custumer recommend
+
 </script>
 
 
